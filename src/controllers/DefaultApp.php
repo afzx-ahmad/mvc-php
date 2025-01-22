@@ -2,7 +2,7 @@
 
 class DefaultApp
 {
-    public function Index()
+    public function index(): void
     {
         echo "Hello from DefaultApp.Index";
     }

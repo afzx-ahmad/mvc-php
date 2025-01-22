@@ -1,0 +1,13 @@
+<?php
+
+function load_core($class_name)
+{
+    $path_to_file = __DIR__ . "/../src/core/" . $class_name . ".php";
+
+    echo file_exists($path_to_file);
+    // if (file_exists($path_to_file)) {
+    //     require_once $path_to_file;
+    // }
+}
+
+spl_autoload_register("load_core");

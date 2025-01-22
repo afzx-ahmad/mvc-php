@@ -1,6 +1,6 @@
 <?php
 
-class Barang
+class BarangController
 {
     public function index()
     {
