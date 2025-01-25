@@ -1,18 +1,27 @@
 <?php
 
-class BarangController
+class BarangController extends BaseController
 {
-    public function index()
+    public function index(): void
     {
-        echo "Helo from Barnag -> index";
+        $data = [
+            "title" => "Home"
+        ];
+
+        $this->view("templates/header", $data);
+        $this->view("barang/index", $data);
+        $this->view("templates/footer");
     }
 
-    public function edit($param)
+    public function edit($param): void
     {
-        echo "Helo from Barnag -> edit <br>";
-        echo "param value = <br>";
-        echo "<pre>";
-        var_dump($param);
-        echo "</pre>";
+        $data = [
+            "title" => "Barang",
+            "param" => $param
+        ];
+
+        $this->view("templates/header", $data);
+        $this->view("barang/edit", $data);
+        $this->view("templates/footer");
     }
 }

@@ -14,7 +14,6 @@ class App
 
     private $_handlers = [];
 
-
     public function setDefaultController(string $controller): void
     {
         $this->_controllerFile = $controller;

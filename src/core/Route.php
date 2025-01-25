@@ -15,6 +15,8 @@ class Route
         $router->post("/barang/insert_barang", ["BarangController", "insert_barang"]);
         $router->post("/barang/edit_barang", ["BarangController", "edit_barang2"]);
 
+        $router->get("/kategori", ["KategoriController", "index"]);
+
         $router->run();
     }
 }
