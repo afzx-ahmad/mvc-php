@@ -53,6 +53,43 @@ input[type="button"] {
   background-color: #d4b1b1;
 }
 
+.form-container {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group label {
+    min-width: 20%;
+}
+
+.input-group input[type=text] {
+    max-width: 60%;
+}
+
+.input-group input[type=date] {
+    max-width: 20%;
+}
+
+.input-group input#jumlah {
+    max-width: 10%;
+}
+
+.input-group input#hargaSatuan {
+    max-width: 20%;
+}
+
+.form-container button[type=submit] {
+    margin-left: 20%;
+    max-width: max-content;
+}
+
 .col-25 {
   float: left;
   width: 25%;
